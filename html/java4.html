@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Buku</title>
+	</head>
+	<body>
+	<script language="javascript">
+	var bonus , beli , terima , ulang;
+	do
+	{
+		beli = prompt ("Masukkan jumlah buku yang Anda beli");
+		beli = parseInt(beli)
+		if (beli>=50)
+			{
+			bonus = (beli/10);
+			bonus = parseInt(bonus);
+			bonus = bonus*4;
+			terima = (beli+bonus);
+			document.write(" Bonus = "+bonus);
+			document.write(" Anda menerima = "+terima);
+			}
+		else
+			{
+			bonus = (beli/5);
+			bonus = parseInt(bonus);
+			terima = (beli+bonus);
+			document.write(" Bonus = "+bonus);
+			document.write(" Anda menerima = "+terima)
+			}
+		ulang=prompt("Hitung lagi ? [Y/T]")
+	}
+	while(ulang=='Y')
+	if(ulang!='Y')
+		alert(" Terima Kasih");
+	</script>
+	</body>
+</html>

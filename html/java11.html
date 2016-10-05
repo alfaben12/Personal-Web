@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Honai</title>
+	</head>
+	<body>
+	<script language="javascript">
+		function Honai()
+		{ 
+			this.jari2 = 0;
+			this.jariJari = 0;
+			this.tTabung = 0;
+		this.hitungvolumeRumah = function (){
+		var volume = 22/7 * this.jari2 * this.tTabung + 1/2 * 4/3 * 22/7 * this.jariJari; 
+		return volume;
+		}
+		this.hitungluasRumah = function (){
+		var luas = 22/7 * this.jari2 + 2 * 22/7 * this.jari2 * this.tTabung + 1/2 * 4 * 22/7 * this.jariJari * this.jari2 ;
+		return luas;
+		}
+		}
+		var s = new Honai();
+		var phi=22/7;
+			s.jari2=prompt("Masukkan jari-jari Tabung");
+			parseInt(s.jari2);
+			s.jariJari=prompt("Masukkan jari-jari bola");
+			parseInt(s.jariJari);
+			s.tinggi=prompt("Masukkan tinggi tabung");
+			parseInt(s.tinggi);
+		document.write("<BR>Jari-jari Tabung = "+s.jari2);
+		document.write("<BR>Jari-jari Bola = "+s.jariJari);
+		document.write("<BR>Tinggi tabung = "+s.tinggi);
+		document.write("<BR>Volume Honai = "+s.hitungvolumeRumah()); 
+		document.write("<BR>Luas Honai = "+s.hitungluasRumah()); 
+	</script>
+	</body>
+</html>	

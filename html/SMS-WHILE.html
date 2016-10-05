@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SMS</title>
+	</head>
+	<body>
+	<script language="javascript">
+	var pulsa , kirim;
+	pulsa = prompt ("Masukkan pulsa Anda")
+	pulsa = parseFloat (pulsa);
+	kirim=prompt("Kirim SMS[Y/T]?= ")
+	while(kirim=='Y')
+		{
+			if(pulsa>=300)
+			{
+				pulsa=pulsa-300;
+				alert("Sisa pulsa= "+pulsa);
+			}
+			else
+			{
+				alert("Maaf pulsa Anda tidak cukup");
+				break;
+			}
+			kirim=prompt("Kirim SMS?[Y/T] ")
+		}
+	alert("Terima Kasih")
+	</script>
+	</body>
+</html>

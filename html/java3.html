@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tes 27-04-2016</title>
+	</head>
+	<body>
+	<script language="javascript">
+	function hitungLuasAlas ( phi, r )
+	{
+	var luasAlas = phi * r * r;
+	return luasAlas;
+	}  
+	function hitungVolume ( luasAlas, t )
+	{
+	var volume = luasAlas * t;
+	return volume;
+	}
+	function hitungLuasTabung ( r, t, luasAlas )
+	{
+	var luasTabung= 2 * r * t +(2 * luasAlas);
+	return luasTabung ;
+	}
+	
+	var phi= 3.14;
+	var r;
+	var t;
+	var luasAlas;
+	var volume;
+	var luasTabung;
+	r = prompt("Masukkan Jari-Jari");
+	t = prompt("Masukkan Tinggi");
+	
+	luasAlas = hitungLuasAlas(phi, r);
+	volume = hitungVolume(luasAlas, t);
+	luasTabung = hitungLuasTabung( r, t, luasAlas)
+	document.write("<BR>Luas Alas= " + luasAlas);
+	document.write("<BR>Volume= " + volume)
+	document.write("<BR>Luas Tabung= " + luasTabung);
+	
+	</script> 
+	</body> 
+</html> 

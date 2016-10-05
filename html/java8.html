@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TABUNG</title>
+	</head>
+	<body>
+	<script language="javascript">
+		var jari = prompt("Nilai jari-jari : ");
+		var tinggi = prompt("Nilai tinggi : ");
+		function HitungLuasAlas (p,r) {
+			var alas = p*r*r;
+			return alas;
+		}
+		function HitungLuasTabung (la,p,r,t) {
+			var luas = 2*la+p*2*r*t;
+			return luas;
+		}
+		function HitungVolumeTabung (la,t) {
+			var volume = la*t;
+			return  volume;
+		}
+		
+		var phi=3.14;
+		var LuasAlas;
+		var LuasTabung;
+		var VolumeTabung;
+		
+		LuasAlas = HitungLuasAlas(phi,jari);
+		LuasTabung = HitungLuasTabung(LuasAlas,phi,jari,tinggi);
+		VolumeTabung = HitungVolumeTabung(LuasAlas,tinggi);
+		
+		alert(	"Nilai Jari-Jari= " + jari + 
+				"\nNilai Tinggi= " + tinggi  + 
+				"\nNilai Luas Alas= " + LuasAlas + 
+				"\nNilai Luas Permukaan= " + LuasTabung +
+				"\nNilai Volume Tabung= " + VolumeTabung);
+	</script>
+	</body>
+</html>

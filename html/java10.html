@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PBO</title>
+	</head>
+	<body>
+	<script language="javascript"> 
+	function piramid()
+	{
+		this.sisi=0;
+		this.tinggi=0;
+		this.tinggisisi=0;
+		this.hitungvolume=function()
+			{
+			var volume=1/3*this.sisi*this.sisi*this.tinggi;
+			return volume;
+			}
+		this.hitungluas=function()
+		{
+		var luas = this.sisi*this.sisi+1/2 *this.sisi*this.tinggisisi*4;
+		return luas;
+		}
+	}
+	var s = new piramid();
+	s.sisi ;
+	s.tinggi ;
+	s.tinggisisi ;
+	s.sisi=prompt("Masukkan sisi alas limas");
+	parseFloat(s.sisi);
+	s.tinggi=prompt("Masukkan tinggi alas limas");
+	parseFloat(s.tinggi);
+	s.tinggisisi=prompt("Masukkan tinggi sisi alas limas");
+	parseFloat(s.tinggisisi);
+	document.write("<BR>Volume :"+s.hitungvolume())
+	document.write("<BR>Luas :"+s.hitungluas())
+	</script> 
+
+
+	</body> 
+</html> 
